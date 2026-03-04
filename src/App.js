@@ -1,4 +1,4 @@
-// 🔥 Ultimate Chat - PRO MAX + SECRET ADMIN PANEL 🔥
+// 🔥 projict Chat - PRO MAX + SECRET ADMIN PANEL 🔥
 import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getAuth, signInAnonymously } from "firebase/auth";
