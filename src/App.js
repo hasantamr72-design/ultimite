@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getAuth, signInAnonymously } from "firebase/auth";
 import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, deleteDoc, doc } from "firebase/firestore";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const firebaseConfig = {
   apiKey: "YOUR_API_KEY",
@@ -95,6 +96,7 @@ export default function UltimateChat() {
 
   return (
     <div style={{background:"#eff6ff",minHeight:"100vh",padding:"20px"}}>
+      <SpeedInsights />
       <h1 style={{background:"#2563eb",color:"white",padding:"15px"}}>Ultimate 💬</h1>
 
       <div style={{display:"flex",gap:"20px"}}>
